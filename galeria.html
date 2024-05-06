@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="galeria/galeria-encabezado.css">
+    <link rel="stylesheet" href="galeria/galeria.css">
+</head>
+<body>
+    
+    <header id="header">    
+        <img src="imagenes/logo.png" class="logo">
+        <input type="checkbox" id="menu">
+                <label for="menu">
+            <img src="imagenes/flechita-abajo-logo.png" class="menu-icono-abajo" id="flechita-abajo" onclick="toggleImage('flechita-arriba')">
+            <img src="imagenes/flechita-arriba-logo.png" class="menu-icono-arriba" id="flechita-arriba" onclick="toggleImage('flechita-abajo')">
+        </label>
+        <ul class="menu">
+            <li class="item"><a href="galeria.html">Volver a ordenar</a></li>
+            <a href="index.html"><li class="btn-volver-inicio"><img src="imagenes/volver-inicio-logo.png"></li></a>
+        </ul>
+    </header>
+    <script src="galeria/galeria-encabezado.js"></script>
+
+    <div class="titulo">
+        <br><br><br><h1>Profesores del Bachillerato Técnico en Informática</h1>
+    </div>
+
+    <div class="container-prof" id="container-prof">
+        <div class="profesores" id="belen">
+            <div class="img-profesores">
+                <img src="imagenes/belen.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-belen">
+                    <b>Belén Álbarez</b>
+                </p>
+                <p class="i-prof" id="i-belen">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="belen()">Ver más...</button>
+            </div>
+        </div>
+        
+        <div class="profesores" id="carlos">
+            <div class="img-profesores">
+                <img src="imagenes/carlos.jpeg">
+            </div>
+            <div class="text-profesores">
+                <p id="n-carlos">
+                    <b>Carlos Benítez</b>
+                </p>
+                <p class="i-prof" id="i-carlos">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="carlos()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="nancy">
+            <div class="img-profesores">
+                <img src="imagenes/nancy.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-nancy">
+                    <b>Nancy Benítez</b>
+                </p>
+                <p class="i-prof" id="i-nancy">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="nancy()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="fany">
+            <div class="img-profesores">
+                <img src="imagenes/fany.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-fany">
+                    <b>Fany Britos</b>
+                </p>
+                <p class="i-prof" id="i-fany">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="fany()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="teresa">
+            <div class="img-profesores">
+                <img src="imagenes/teresa.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-teresa">
+                    <b>Teresita Cañiza</b>
+                </p>
+                <p class="i-prof" id="i-teresa">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="teresa()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="andrea">
+            <div class="img-profesores">
+                <img src="imagenes/andrea.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-andrea">
+                    <b>Andrea Cristaldo</b>
+                </p>
+                <p class="i-prof" id="i-andrea">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="andrea()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="ani">
+            <div class="img-profesores">
+                <img src="imagenes/ani.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-ani">
+                    <b>Ani Domínguez</b>
+                </p>
+                <p class="i-prof" id="i-ani">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="ani()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="dani">
+            <div class="img-profesores">
+                <img src="imagenes/dani.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-dani">
+                    <b>Daniel Escobar</b>
+                </p>
+                <p class="i-prof" id="i-dani">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="dani()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="edber">
+            <div class="img-profesores">
+                <img src="imagenes/edber.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-edber">
+                    <b>Edber Giménez</b>
+                </p>
+                <p class="i-prof" id="i-edber">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="edber()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="enzo">
+            <div class="img-profesores">
+                <img src="imagenes/enzo.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-enzo">
+                    <b>Enzo Giménez</b>
+                </p>
+                <p class="i-prof" id="i-enzo">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="enzo()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="catalino">
+            <div class="img-profesores">
+                <img src="imagenes/catalino.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-catalino">
+                    <b>Catalino González</b>
+                </p>
+                <p class="i-prof" id="i-catalino">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="catalino()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="elizabeth">
+            <div class="img-profesores">
+                <img src="imagenes/elizabeth.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-elizabeth">
+                    <b>Elizabeth González</b>
+                </p>
+                <p class="i-prof" id="i-elizabeth">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="elizabeth()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="hugo">
+            <div class="img-profesores">
+                <img src="imagenes/hugo.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-hugo">
+                    <b>Hugo Huespe</b>
+                </p>
+                <p class="i-prof" id="i-hugo">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="hugo()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="paul">
+            <div class="img-profesores">
+                <img src="imagenes/paul.jpeg">
+            </div>
+            <div class="text-profesores">
+                <p id="n-paul">
+                    <b>Paul Martinez</b>
+                </p>
+                <p  class="i-prof" id="i-paul">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button  onclick="paul()">Ver más...</button>
+            </div>
+        </div>
+        
+        <div class="profesores" id="derlis">
+            <div class="img-profesores">
+                <img src="imagenes/derlis.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-derlis">
+                    <b>Derlis Martinez</b>
+                </p>
+                <p class="i-prof" id="i-derlis">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="derlis()">Ver más...</button>
+            </div>
+        </div>
+        
+        <div class="profesores" id="fabriciano">
+            <div class="img-profesores">
+                <img src="imagenes/antropologia1ro.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-fabriciano">
+                    <b>Fabriciano Ortega</b>
+                </p>
+                <p class="i-prof" id="i-fabriciano">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="fabriciano()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="lilian">
+            <div class="img-profesores">
+                <img src="imagenes/lilian.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-lilian">
+                    <b>Lilian Ortellado</b>
+                </p>
+                <p class="i-prof" id="i-lilian">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="lilian()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="graciela">
+            <div class="img-profesores">
+                <img src="imagenes/graciela.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-graciela">
+                    <b>Graciela Portillo</b>
+                </p>
+                <p class="i-prof" id="i-graciela">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="graciela()">Ver más...</button>
+            </div>
+        </div>
+        
+        <div class="profesores" id="jaqueline">
+            <div class="img-profesores">
+                <img src="imagenes/jaqueline.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-jaqueline">
+                    <b>Jaqueline Portillo</b>
+                </p>
+                <p class="i-prof" id="i-jaqueline">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="jaqueline()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="nestor">
+            <div class="img-profesores">
+                <img src="imagenes/nestor.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-nestor">
+                    <b>Nestor Ramírez</b>
+                </p>
+                <p class="i-prof" id="i-nestor">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="nestor()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="rosa">
+            <div class="img-profesores">
+                <img src="imagenes/rosa.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-rosa">
+                    <b>Rosa Rolón</b>
+                </p>
+                <p class="i-prof" id="i-rosa">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="rosa()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="jessica">
+            <div class="img-profesores">
+                <img src="imagenes/jessica.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-jessica">
+                    <b>Yesica Ruíz</b>
+                </p>
+                <p class="i-prof" id="i-jessica">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="jessica()">Ver más...</button>
+            </div>
+        </div>
+
+        <div class="profesores" id="caritina">
+            <div class="img-profesores">
+                <img src="imagenes/caritina.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-caritina">
+                    <b>Nora Vallejos</b>
+                </p>
+                <p class="i-prof" id="i-caritina">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="caritina()">Ver más...</button>
+            </div>
+        </div>
+        
+        <script src="galeria/profesores.js"></script>
+    </div>
+</body>
+</html>

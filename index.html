@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATIN24</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="galeria/galeria-encabezado.css">
+</head>
+<body>
+    <header id="header">
+        <img src="imagenes/logo.png" class="logo">
+        <input type="checkbox" id="menu">
+                <label for="menu">
+            <img src="imagenes/flechita-abajo-logo.png" class="menu-icono-abajo" id="flechita-abajo" onclick="toggleImage('flechita-arriba')">
+            <img src="imagenes/flechita-arriba-logo.png" class="menu-icono-arriba" id="flechita-arriba" onclick="toggleImage('flechita-abajo')">
+        </label>
+
+        <ul class="menu">
+            <li><a href="#somos-proya" class="item">Historia</a></li>
+            <li><a href="#nuestros-programas" class="item">Objetivos</a></li>
+            <li><a href="#info" class="item">Evento</a></li>
+            <li><a href="#" class="item">Testimonios</a></li>
+            <li><a href="galeria.html" class="item">Galeria</a></li>
+            <li ><a href="#" class="item">Contacto</a>
+                <ul>
+                    <li><a href="https://www.facebook.com/share/T5goaqLSgL1wjLTD/?mibextid=qi2Omg"><img src="imagenes/logo-facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/decepticons024?igsh=ZGI4c3JjdzRoNDdu"><img src="imagenes/logo-instagram.png"></a></li>
+                    <li><a href="colegiomultacaacupe@hotmail.com"><img src="imagenes/logo-gmail.png"></a></li>
+                </ul>
+            </li>
+            <a href="#inicio"><li class="btn-volver-inicio"><img src="imagenes/volver-inicio-logo.png"></li></a>
+            
+        </ul>
+    </header>
+    <script src="galeria/galeria-encabezado.js"></script>
+
+    <section id="inicio">
+        <div id="titulo-principal">
+            <h1>vení aprendé a Programar <br>con los Mejores</h1>
+        </div>
+        <div  class="que-es">
+            <p id="que-es">¿Qué es el Bachillerato Técnico en Informática?<br>
+            Es un bachillerato enfocado en los jóvenes, para <br>
+            fortalecer su incorporación al mundo laboral,<br>
+            vinculado con el sector tecnológico.</p>
+            <p id="que-estudia">¿Qué se estudia en este bachillerato?<br>
+            En el Bachillerato Técnico en Informática, se estudian temas <br>
+            como la resolución de algoritmos y programación en diversos <br>
+            lenguajes y para diversas plataformas.</p>
+        </div>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"><img src="imagenes/historiafoto.jfif"></div>
+            <div class="texto">
+                <h2>Historia de <span class="color-acento">BATIN!</span></h2>
+                <p>Los desafíos del avance de la tecnología, especialmente de las diferentes herramientas informáticas, llevaron a las autoridades educativas de nuestra institución, bajo la dirección de la Lic. Margarita Ortiz de García, a gestionar la apertura de un bachilletaro técnico que proporcione a los estudiantes una sólida formación técnica, ética y humanística que les permita proyectar las competencias para incorporar y desarrollar programas informáticos, instalar (hardware y software), asistencia técnica, aplicación del pensamiento crítico y el método científico en los problemas propios de la informática, adecuándose a las exigencias de los cambios tecnológicos del mundo globalizado. <br><br>
+                    De esa manera, después de cumplir con todos los requerimientos del MEC, en el año 1998 se habilita el Bachillerato Técnico en Informática siendo la primera coordinadora de la especialidad la Mgtr. Raquel Godoy de Cousiño. En el año 2000 egresan los 31 flamantes Bachilleres Técnicos en Informática de la primera promoción. Los siguientes coordinadores fueron la Mgtr. Graciela Agüero, la Lic. Alicia Ruiz Díaz y el Lic. Jorge Daniel Mendoza Figueredo. Actualmente la coordinación está a cargo de la Prof. Ana Patricia Chávez Osorio. <br> <br>
+                    En 25 años egresaron 23 promociones de estudiantes capacitados para insertarse al campo laboral y desempeñarse eficiente y eficazmente en pequeñas y medianas empresas de servicios públicos y/o privados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="mas-informacion">
+            <h2>Más Información...</h2>
+            <p></p>
+            <div class="programas">
+                <div class="carta" id="div-perfil">
+                    <h3>Perfil del <br> Egresado</h3>
+                    <p id="i-perfil"><br><br>El perfil profesional pretende una sólida formación técnica, ética y humanista que le permita proyectar las competencias para incorporar y desarrollar programas informáticos, instalar hardware y software, brindar asistencia técnica, todo, con pensamiento crítico.</p>
+                    <button onclick="perfil()" id="btn-perfil">+ Info</button>
+                </div>
+                <div class="carta" id="div-mision">
+                    <h3>Misión<br>&nbsp;</h3>
+                    <p id="i-mision"><br><br>Formar y capacitar a estudiantes en el Bachillerato Técnico en Informática, brindando una sólida formación técnica, ética y humanística para aplicar en programas informáticos, promoviendo el pensamiento crítico y el método científico.</p>
+                    <button  onclick="mision()" id="btn-mision">+ Info</button>
+                </div>
+                <div class="carta" id="div-vision">
+                    <h3>Visión<br>&nbsp;</h3>
+                    <p id="i-vision"><br><br>Ser líderes en la formación técnica en informática, reconocidos por proporcionar a los estudiantes las habilidades necesarias para enfrentar los desafíos tecnológicos presentes y futuros.</p>
+                    <button  onclick="vision()" id="btn-vision">+ Info</button>
+                </div>  
+            </div>
+        </div>
+        <script id="info" src="informacion.js"></script>
+   </section>
+     <!-- <div class="container-prof" id="container-prof">
+        <div class="profesores" id="belen">
+            <div class="img-profesores">
+                <img src="imagenes/belen.jfif">
+            </div>
+            <div class="text-profesores">
+                <p id="n-belen">
+                    <b>Belén Álbarez</b>
+                </p>
+                <p class="i-prof" id="i-belen">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur vitae mollitia officia reprehenderit autem ipsa soluta, dolorem molestiae consequatur eaque nobis? Sed voluptates dicta modi? Modi error veniam amet.
+                    Totam, alias. Illum molestias ullam, cum ab id aut nam aspernatur iusto tempora ipsum? Odio, dolores ex eaque repellendus laboriosam, ipsam soluta optio odit ad quidem accusamus autem quam error?
+                    Quam alias quod, iure similique asperiores minima optio minus laboriosam illum hic et voluptatum! Debitis hic esse tenetur delectus tempore architecto suscipit cumque, impedit vero cupiditate illo explicabo ea expedita.
+                </p>
+            </div>
+            <div class="btn-profesores">
+                <button onclick="belen()">Ver más...</button>
+            </div>
+        </div>
+    </div> -->
+    <footer>
+        <div class="container">
+            <p>&copy;Promo BATIN 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
