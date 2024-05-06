@@ -97,9 +97,12 @@ label{
         right: 0;
         background-color: #121212;
         display: none;
+        height: 290px;
     }
     .menu li:hover > ul{
         display: flex;
+        padding: 0px;
+        margin-top: 5px;
     }
 
     .menu li a img{
@@ -111,14 +114,17 @@ label{
         border-radius: 5px;
     }
 
-    .item{
+    .menu .item {
         margin: 0 0 20px 0;
         width: 100%;
     }
 
-    .btn-volver-inicio{
+    .menu li{
+        margin: 5px 0px;
+    }
+    li.btn-volver-inicio{
         text-align: center;
-        margin-top: 50px;
+        margin-top: 45px;
     }
 
 

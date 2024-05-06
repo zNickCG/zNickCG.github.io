@@ -255,6 +255,162 @@ button:hover{
     font-weight: bold;
 }
 
+#testimonios{
+    background-color: rgb(150,100,90);
+    color: white;
+    text-align: center;
+}
+
+#testimonios .mas-informacion{
+    padding: 150px 12px;
+}
+
+#testimonios .programas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#testimonios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-align: left;
+    padding-left: 30px ;
+}
+
+#testimonios .carta p{
+    display: none;
+}
+
+#testimonios .programas .carta{
+    width: 500px;
+    height: 250px;
+}
+
+#testimonios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.testi:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/monse.jpeg");
+
+}
+
+.testi:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/carolina.jpeg");
+}
+
+.testi:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/fernanda.jpeg");
+    
+}
+ 
+#testimonios .programas .carta{
+    padding: 20px;
+    background-size: 100% 210px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+} 
+
+#evento{
+    background-color: rgb(40,40,40);
+    color: white;
+    text-align: center;
+}
+
+#evento .mas-informacion{
+    padding: 150px 12px;
+}
+
+#evento .programas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#evento h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-align: left;
+    padding-left: 30px ;
+}
+
+#evento .carta p{
+    display: none;
+}
+
+#evento .programas .carta{
+    width: 500px;
+    height: 250px;
+}
+
+#evento .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.even:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/monse.jpeg");
+
+}
+
+.even:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/carolina.jpeg");
+}
+
+.even:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/fernanda.jpeg");
+    
+}
+ 
+#evento .programas .carta{
+    padding: 20px;
+    background-size: 100% 210px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
 #final{
     display: flex;
     flex-direction: column;
@@ -401,6 +557,132 @@ footer .container{
         )
         ,url("imagenes/vision2.jfif");
 
+    }
+
+    #testimonios .programas{
+        display: inline-block;
+        justify-content:center;
+        text-align: center;
+    }
+
+    #testimonios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #testimonios h2{
+        font-size: 3em;
+    }
+
+    #testimonios h3{
+        margin-top: 0;
+    }
+
+    #testimonios .programas .carta{
+        width: 250px;
+        height: 250px;
+    }
+    .testi:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/monse.jpeg");
+
+    }
+
+    .testi:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/carolina.jpeg");
+    }
+
+    .testi:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/fernanda.jpeg");
+
+    }
+
+    #evento{
+        background-color: rgb(40,40,40);
+        color: white;
+        text-align: center;
+    }
+    
+    #evento .mas-informacion{
+        padding: 150px 12px;
+    }
+    
+    #evento .programas{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #evento h2{
+        margin-top: 0;
+        font-size: 3.2em;
+        text-align: left;
+        padding-left: 30px ;
+    }
+
+    #evento .programas .carta{
+        width: 300px;
+        height: 250px;
+    }
+    
+    #evento .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+    
+    .even:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/monse.jpeg");
+    
+    }
+    
+    .even:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/carolina.jpeg");
+    }
+    
+    .even:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/fernanda.jpeg");
+        
+    }
+     
+    #evento .programas .carta{
+        padding: 20px;
+        background-size: 100% 210px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
 
     #caracteristicas{
