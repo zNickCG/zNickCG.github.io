@@ -23,7 +23,7 @@ body{
 }
 
 .titulo{
-    color:brown;
+    color:#ab022f;
     text-align: center;
     font-family:  "Teko", sans-serif; 
 }
@@ -57,6 +57,10 @@ body{
     color: white;
 }
 
+.text-profesores p{
+    margin-top: 0px;
+}
+
 .i-prof{
     display: none;
 }
@@ -66,26 +70,34 @@ body{
 }
 
 .btn-profesores button{
-    font-family: "Teko", sans-serif;
-    background-color: crimson;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 16px;
-    border: solid 5px;
-    border-style: double;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    margin-bottom: 10px;
+    background-color: #670f22;
 }
 
 .btn-profesores button:hover{
-    background-color: brown;
+    background-color: #9a0526;
     cursor: pointer;
 }
 
 .btn-profesores button:active{
-    background-color: brown;
-    color: whitesmoke;
+    background-color: #cd0c36;
     cursor: pointer;
 }
 
 
+@media (max-width: 991px){
+    .menu{
+        height: 130px;
+    }
 
-
+    .menu li{
+        margin: 0px 0px;
+    }
+}

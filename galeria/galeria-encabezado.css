@@ -39,7 +39,7 @@ header{
 }
 
 .item:hover{
-    color: aqua;
+    color: #cd0c36;
 }
 
 #menu{
@@ -65,7 +65,7 @@ label{
 .btn-volver-inicio{
     padding: 10px 24px;
     border-radius: 30px;
-    background-color: brown;
+    background-color:#9a0526;
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -74,10 +74,6 @@ label{
 
 .btn-volver-inicio img{
     height: 18px;
-}
-
-.btn:hover{
-    color: aqua;
 }
 
 @media(max-width:991px){
@@ -123,6 +119,7 @@ label{
         margin: 5px 0px;
     }
     li.btn-volver-inicio{
+        
         text-align: center;
         margin-top: 45px;
     }
